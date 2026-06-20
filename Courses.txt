@@ -1,0 +1,6 @@
+CRS801,Python Development,12 Weeks,TRN501
+CRS802,Data Science,12 Weeks,TRN502
+CRS803,Web Development,12 Weeks,TRN503
+CRS804,Artificial Intelligence,16 Weeks ,TRN504
+CRS805,Cyber Security,14 Weeks,TRN505
+CRS806,Database Management,8 Weeks,TRN506

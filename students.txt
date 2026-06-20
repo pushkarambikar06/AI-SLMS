@@ -1,0 +1,6 @@
+STU101,Aarav Patil,aarav.patil@gmail.com,A
+STU102,Diya Sharma,diya.sharma@gmail.com,A
+STU103,Rohan Mehta,rohan.mehta@gmail.com,B
+STU104,Ananya Joshi,ananya.joshi@gmail.com,B
+STU105,Vivaan Singh,vivaan.singh@gmail.com,C
+STU106,Arjun Verma,arjun.verma@gmail.com,C

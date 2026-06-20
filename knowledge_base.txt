@@ -1,0 +1,1762 @@
+
+AI-SLMS KNOWLEDGE BASE
+
+========================================
+COURSE: PYTHON DEVELOPMENT
+==========================
+
+TOPIC: VARIABLES
+
+DEFINITION:
+Variables are used to store data in memory.
+
+SYNTAX:
+variable_name = value
+
+EXAMPLE:
+name = "Pushkar"
+print(name)
+
+OUTPUT:
+Pushkar
+
+----------------------------------------
+
+TOPIC: DATA TYPES
+
+DEFINITION:
+Data types define the kind of value stored in a variable.
+
+SYNTAX:
+int, float, str, bool, list, tuple, dict, set
+
+EXAMPLE:
+age = 20
+price = 99.5
+name = "Pushkar"
+
+----------------------------------------
+
+TOPIC: INPUT FUNCTION
+
+DEFINITION:
+The input() function is used to take input from the user.
+
+SYNTAX:
+variable = input("Message")
+
+EXAMPLE:
+name = input("Enter Name: ")
+
+----------------------------------------
+
+TOPIC: FOR LOOP
+
+DEFINITION:
+A for loop is used to repeat a block of code.
+
+SYNTAX:
+for variable in sequence:
+    statement
+
+EXAMPLE:
+for i in range(5):
+    print(i)
+
+OUTPUT:
+0
+1
+2
+3
+4
+
+----------------------------------------
+
+TOPIC: FUNCTIONS
+
+DEFINITION:
+Functions are reusable blocks of code.
+
+SYNTAX:
+def function_name():
+    statement
+
+EXAMPLE:
+def greet():
+    print("Welcome")
+
+greet()
+
+OUTPUT:
+Welcome
+
+
+TOPIC: CLASS
+
+DEFINITION:
+A class is a blueprint used to create objects.
+
+SYNTAX:
+class ClassName:
+pass
+EXAMPLE:
+class Student:
+pass
+
+student1 = Student()
+
+----------------------------------------
+
+TOPIC: OBJECT
+
+DEFINITION:
+An object is an instance of a class.
+
+SYNTAX:
+object_name = ClassName()
+
+EXAMPLE:
+class Student:
+pass
+
+student1 = Student()
+
+----------------------------------------
+
+TOPIC: CONSTRUCTOR
+
+DEFINITION:
+A constructor is a special method that initializes object attributes automatically when an object is created.
+
+SYNTAX:
+def **init**(self):
+pass
+
+EXAMPLE:
+class Student:
+	def __init__(self,name):
+    	self.name = name
+
+
+student1 = Student("Pushkar")
+
+----------------------------------------
+
+TOPIC: INSTANCE VARIABLE
+
+DEFINITION:
+Instance variables belong to individual objects and store object-specific data.
+
+SYNTAX:
+self.variable_name
+
+EXAMPLE:
+class Student:
+	def __init__(self,name):
+    	self.name = name
+
+
+----------------------------------------
+
+TOPIC: CLASS VARIABLE
+
+DEFINITION:
+Class variables are shared among all objects of a class.
+
+SYNTAX:
+class ClassName:
+	variable_name = value
+
+EXAMPLE:
+class Student:
+	school = "ABC School"
+
+----------------------------------------
+
+TOPIC: INHERITANCE
+
+DEFINITION:
+Inheritance allows one class to acquire properties and methods from another class.
+
+SYNTAX:
+class Child(Parent):
+	pass
+
+EXAMPLE:
+class Person:
+	pass
+
+class Student(Person):
+	pass
+
+----------------------------------------
+
+TOPIC: SINGLE INHERITANCE
+
+DEFINITION:
+A child class inherits from one parent class.
+
+EXAMPLE:
+class Person:
+	pass
+
+class Student(Person):
+	pass
+
+----------------------------------------
+
+TOPIC: MULTILEVEL INHERITANCE
+
+DEFINITION:
+A class inherits from another derived class.
+
+EXAMPLE:
+class Person:
+	pass
+
+class Student(Person):
+	pass
+
+class GraduateStudent(Student):
+	pass
+
+----------------------------------------
+
+
+TOPIC: ENCAPSULATION
+
+DEFINITION:
+Encapsulation protects data by restricting direct access.
+
+SYNTAX:
+self.__variable
+
+EXAMPLE:
+Class Student:
+
+
+def __init__(self):
+    self.__marks = 90
+
+
+----------------------------------------
+
+TOPIC: POLYMORPHISM
+
+DEFINITION:
+Polymorphism allows the same method name to perform different actions.
+
+EXAMPLE:
+class Dog:
+	def sound(self):
+    	print("Bark")
+
+
+class Cat:
+	def sound(self):
+    	print("Meow")
+
+----------------------------------------
+
+TOPIC: METHOD OVERRIDING
+
+DEFINITION:
+Method overriding occurs when a child class provides its own implementation of a parent class method.
+
+EXAMPLE:
+class Person:
+	def show(self):
+    	print("Person")
+
+class Student(Person):
+	def show(self):
+    	print("Student")
+----------------------------------------
+
+TOPIC: ABSTRACTION
+
+DEFINITION:
+Abstraction hides implementation details and shows only essential information.
+
+EXAMPLE:
+from abc import ABC, abstractmethod
+
+class Vehicle(ABC):
+@abstractmethod
+	def start(self):
+    	pass
+
+----------------------------------------
+
+TOPIC: SUPER KEYWORD
+
+DEFINITION:
+The super() function is used to access parent class methods and constructors.
+
+EXAMPLE:
+class Person:
+	def __init__(self,name):
+    	self.name = name
+
+class Student(Person):
+	def __init__(self,name):
+    	super().__init__(name)
+
+----------------------------------------
+
+TOPIC: ASSOCIATION
+
+DEFINITION:
+Association represents a relationship between two independent classes.
+
+EXAMPLE:
+Student ------ Course
+
+A student can enroll in a course.
+
+----------------------------------------
+
+TOPIC: AGGREGATION
+
+DEFINITION:
+Aggregation is a weak relationship where one object contains another object.
+
+EXAMPLE:
+Department contains Teachers.
+
+Teachers can exist independently.
+
+----------------------------------------
+
+TOPIC: COMPOSITION
+
+DEFINITION:
+Composition is a strong relationship where one object owns another object.
+
+EXAMPLE:
+House contains Rooms.
+
+If the House is destroyed, Rooms also cease to exist.
+
+========================================
+COURSE: DATA SCIENCE
+====================
+
+TOPIC: DATA SCIENCE
+
+DEFINITION:
+Data Science is the process of collecting, analyzing, and interpreting data to extract useful insights and support decision-making.
+
+EXAMPLE:
+Analyzing student performance data to identify top-performing students.
+
+----------------------------------------
+
+TOPIC: NUMPY
+
+DEFINITION:
+NumPy is a Python library used for numerical computing and working with arrays.
+
+SYNTAX:
+import numpy as np
+
+EXAMPLE:
+import numpy as np
+
+arr = np.array([1, 2, 3, 4])
+
+print(arr)
+
+OUTPUT:
+[1 2 3 4]
+
+----------------------------------------
+
+TOPIC: PANDAS
+
+DEFINITION:
+Pandas is a Python library used for data manipulation and analysis.
+
+SYNTAX:
+import pandas as pd
+
+EXAMPLE:
+import pandas as pd
+
+data = {
+"Name": ["Aarav", "Diya"],
+"Marks": [90, 85]
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+OUTPUT:
+Name  Marks
+0  Aarav     90
+1   Diya     85
+
+----------------------------------------
+
+TOPIC: SERIES
+
+DEFINITION:
+A Series is a one-dimensional labeled array in Pandas.
+
+SYNTAX:
+pd.Series(data)
+
+EXAMPLE:
+import pandas as pd
+
+s = pd.Series([10, 20, 30])
+
+print(s)
+
+OUTPUT:
+0    10
+1    20
+2    30
+
+----------------------------------------
+
+TOPIC: DATAFRAME
+
+DEFINITION:
+A DataFrame is a two-dimensional table-like data structure in Pandas.
+
+SYNTAX:
+pd.DataFrame(data)
+
+EXAMPLE:
+import pandas as pd
+
+data = {
+"Name": ["Aarav", "Diya"],
+"Grade": ["A", "B"]
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+OUTPUT:
+Name Grade
+0  Aarav     A
+1   Diya     B
+
+----------------------------------------
+
+TOPIC: DATA CLEANING
+
+DEFINITION:
+Data cleaning is the process of identifying and correcting errors or missing values in a dataset.
+
+EXAMPLE:
+Removing duplicate student records from a dataset.
+
+----------------------------------------
+
+TOPIC: MISSING VALUES
+
+DEFINITION:
+Missing values are data entries that are empty or unavailable.
+
+SYNTAX:
+df.isnull()
+
+EXAMPLE:
+import pandas as pd
+
+df.isnull()
+
+----------------------------------------
+
+TOPIC: DATA ANALYSIS
+
+DEFINITION:
+Data analysis involves examining data to discover useful information and patterns.
+
+EXAMPLE:
+Finding the average marks of all students.
+
+----------------------------------------
+
+TOPIC: MATPLOTLIB
+
+DEFINITION:
+Matplotlib is a Python library used for creating graphs and visualizations.
+
+SYNTAX:
+import matplotlib.pyplot as plt
+
+EXAMPLE:
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3]
+y = [10, 20, 30]
+
+plt.plot(x, y)
+plt.show()
+
+----------------------------------------
+
+TOPIC: DATA VISUALIZATION
+
+DEFINITION:
+Data visualization is the graphical representation of data using charts and graphs.
+
+EXAMPLE:
+Displaying student progress using a bar chart.
+
+----------------------------------------
+
+TOPIC: BAR CHART
+
+DEFINITION:
+A bar chart is used to compare values across categories.
+
+EXAMPLE:
+Students vs Marks chart.
+
+----------------------------------------
+
+TOPIC: LINE CHART
+
+DEFINITION:
+A line chart is used to show trends over time.
+
+EXAMPLE:
+Monthly website visitors.
+
+----------------------------------------
+
+TOPIC: PIE CHART
+
+DEFINITION:
+A pie chart shows proportions of a whole.
+
+EXAMPLE:
+Percentage distribution of grades in a class.
+
+----------------------------------------
+
+TOPIC: CSV FILE
+
+DEFINITION:
+CSV (Comma Separated Values) files are used to store tabular data.
+
+SYNTAX:
+import pandas as pd
+
+df = pd.read_csv("students.csv")
+
+EXAMPLE:
+import pandas as pd
+
+df = pd.read_csv("students.csv")
+
+print(df)
+
+----------------------------------------
+
+TOPIC: DATASET
+
+DEFINITION:
+A dataset is a collection of related data used for analysis.
+
+EXAMPLE:
+A file containing student names, grades, and attendance records.
+
+========================================
+COURSE: WEB DEVELOPMENT
+=======================
+
+TOPIC: WEB DEVELOPMENT
+
+DEFINITION:
+Web Development is the process of creating and maintaining websites and web applications.
+
+EXAMPLE:
+Creating an online Student Learning Management System (SLMS).
+
+----------------------------------------
+
+TOPIC: HTML
+
+DEFINITION:
+HTML (HyperText Markup Language) is used to create the structure of a web page.
+
+SYNTAX: <tag>Content</tag>
+
+EXAMPLE:
+
+<h1>Welcome to My Website</h1>
+
+OUTPUT:
+Displays a heading on the webpage.
+
+----------------------------------------
+
+TOPIC: HTML HEADINGS
+
+DEFINITION:
+Headings are used to define titles and subtitles on a webpage.
+
+SYNTAX:
+
+<h1>Heading</h1>
+
+EXAMPLE:
+
+<h1>Main Heading</h1>
+<h2>Sub Heading</h2>
+
+----------------------------------------
+
+TOPIC: HTML PARAGRAPH
+
+DEFINITION:
+The paragraph tag is used to display text content.
+
+SYNTAX:
+
+<p>Text</p>
+
+EXAMPLE:
+
+<p>Welcome to Web Development.</p>
+
+----------------------------------------
+
+TOPIC: HTML LINK
+
+DEFINITION:
+Links allow users to navigate from one page to another.
+
+SYNTAX: <a href="URL">Link Text</a>
+
+EXAMPLE: <a href="https://www.google.com">
+Google </a>
+
+----------------------------------------
+
+TOPIC: HTML IMAGE
+
+DEFINITION:
+The image tag is used to display images on a webpage.
+
+SYNTAX: <img src="image.jpg" alt="Image">
+
+EXAMPLE: <img src="logo.png" alt="Company Logo">
+
+----------------------------------------
+
+TOPIC: HTML LIST
+
+DEFINITION:
+Lists are used to display items in an ordered or unordered format.
+
+SYNTAX:
+
+<ul>
+<li>Item</li>
+</ul>
+
+EXAMPLE:
+
+<ul>
+<li>Python</li>
+<li>Java</li>
+</ul>
+
+----------------------------------------
+
+TOPIC: HTML TABLE
+
+DEFINITION:
+Tables are used to organize data into rows and columns.
+
+SYNTAX:
+
+<table>
+<tr>
+<td>Data</td>
+</tr>
+</table>
+
+EXAMPLE:
+
+<table>
+<tr>
+<th>Name</th>
+<th>Grade</th>
+</tr>
+
+<tr>
+<td>Aarav</td>
+<td>A</td>
+</tr>
+</table>
+
+----------------------------------------
+
+TOPIC: HTML FORM
+
+DEFINITION:
+Forms are used to collect input from users.
+
+SYNTAX:
+
+<form>
+<input>
+</form>
+
+EXAMPLE:
+
+<form>
+<input type="text">
+<input type="submit">
+</form>
+
+----------------------------------------
+
+TOPIC: CSS
+
+DEFINITION:
+CSS (Cascading Style Sheets) is used to style web pages.
+
+SYNTAX:
+selector {
+property: value;
+}
+
+EXAMPLE:
+h1 {
+color: red;
+}
+
+----------------------------------------
+
+TOPIC: CSS COLORS
+
+DEFINITION:
+Colors are used to change the appearance of webpage elements.
+
+SYNTAX:
+color: value;
+
+EXAMPLE:
+p {
+color: blue;
+}
+
+----------------------------------------
+
+TOPIC: CSS BACKGROUND
+
+DEFINITION:
+Background properties are used to set background colors or images.
+
+SYNTAX:
+background-color: value;
+
+EXAMPLE:
+body {
+background-color: lightgray;
+}
+
+----------------------------------------
+
+TOPIC: CSS FONT
+
+DEFINITION:
+Font properties are used to style text.
+
+SYNTAX:
+font-size: value;
+
+EXAMPLE:
+p {
+font-size: 20px;
+}
+
+----------------------------------------
+
+TOPIC: CSS BOX MODEL
+
+DEFINITION:
+The CSS Box Model consists of content, padding, border, and margin.
+
+EXAMPLE:
+div {
+padding: 10px;
+border: 1px solid black;
+margin: 15px;
+}
+
+----------------------------------------
+
+TOPIC: JAVASCRIPT
+
+DEFINITION:
+JavaScript is used to add interactivity and dynamic behavior to web pages.
+
+SYNTAX:
+
+<script>
+    code
+</script>
+
+EXAMPLE:
+
+<script>
+    alert("Welcome");
+</script>
+
+----------------------------------------
+
+TOPIC: VARIABLES IN JAVASCRIPT
+
+DEFINITION:
+Variables store data in JavaScript.
+
+SYNTAX:
+let variableName = value;
+
+EXAMPLE:
+let name = "Pushkar";
+
+console.log(name);
+
+----------------------------------------
+
+TOPIC: FUNCTIONS IN JAVASCRIPT
+
+DEFINITION:
+Functions are reusable blocks of code.
+
+SYNTAX:
+function functionName() {
+code
+}
+
+EXAMPLE:
+function greet() {
+console.log("Welcome");
+}
+
+greet();
+
+----------------------------------------
+
+TOPIC: EVENTS
+
+DEFINITION:
+Events are actions performed by users such as clicking a button.
+
+EXAMPLE: <button onclick="showMessage()">
+Click Me </button>
+
+----------------------------------------
+
+TOPIC: RESPONSIVE WEB DESIGN
+
+DEFINITION:
+Responsive design ensures a website works properly on different screen sizes.
+
+EXAMPLE:
+Using CSS media queries to adjust layouts for mobile devices.
+
+----------------------------------------
+
+TOPIC: FRONTEND DEVELOPMENT
+
+DEFINITION:
+Frontend Development focuses on the user interface and user experience of a website.
+
+TECHNOLOGIES:
+HTML
+CSS
+JavaScript
+
+----------------------------------------
+
+TOPIC: BACKEND DEVELOPMENT
+
+DEFINITION:
+Backend Development handles server-side logic, databases, and application functionality.
+
+TECHNOLOGIES:
+Python
+PHP
+Node.js
+Java
+
+----------------------------------------
+
+TOPIC: FULL STACK DEVELOPMENT
+
+DEFINITION:
+Full Stack Development involves working on both frontend and backend technologies.
+
+EXAMPLE:
+Developing a complete LMS with HTML, CSS, JavaScript, Python, and a database.
+
+
+========================================
+COURSE: ARTIFICIAL INTELLIGENCE
+===============================
+
+TOPIC: ARTIFICIAL INTELLIGENCE (AI)
+
+DEFINITION:
+Artificial Intelligence (AI) is a branch of computer science that enables machines to perform tasks that normally require human intelligence.
+
+EXAMPLE:
+Chatbots, Virtual Assistants, Self-Driving Cars.
+
+----------------------------------------
+
+TOPIC: MACHINE LEARNING
+
+DEFINITION:
+Machine Learning is a subset of AI that allows computers to learn patterns from data without being explicitly programmed.
+
+EXAMPLE:
+Predicting student performance based on previous marks.
+
+----------------------------------------
+
+TOPIC: DEEP LEARNING
+
+DEFINITION:
+Deep Learning is a subset of Machine Learning that uses neural networks with multiple layers to learn complex patterns.
+
+EXAMPLE:
+Face Recognition Systems.
+
+----------------------------------------
+
+TOPIC: NEURAL NETWORK
+
+DEFINITION:
+A Neural Network is a computing system inspired by the human brain that learns from data.
+
+EXAMPLE:
+Image Classification Systems.
+
+----------------------------------------
+
+TOPIC: NATURAL LANGUAGE PROCESSING (NLP)
+
+DEFINITION:
+Natural Language Processing enables computers to understand, interpret, and generate human language.
+
+EXAMPLE:
+Google Translate, ChatGPT.
+
+----------------------------------------
+
+TOPIC: TOKENIZATION
+
+DEFINITION:
+Tokenization is the process of breaking text into smaller units called tokens.
+
+SYNTAX:
+sentence.split()
+
+EXAMPLE:
+text = "Python is easy"
+
+tokens = text.split()
+
+print(tokens)
+
+OUTPUT:
+['Python', 'is', 'easy']
+
+----------------------------------------
+
+TOPIC: TOKEN COUNT
+
+DEFINITION:
+Token Count is the total number of tokens present in a sentence.
+
+EXAMPLE:
+Input:
+Python is easy to learn
+
+Tokens:
+['Python', 'is', 'easy', 'to', 'learn']
+
+Total Tokens:
+5
+
+----------------------------------------
+
+TOPIC: WORD FREQUENCY
+
+DEFINITION:
+Word Frequency counts how many times a word appears in a text.
+
+EXAMPLE:
+Input:
+Python Python AI
+
+OUTPUT:
+Python → 2
+AI → 1
+
+----------------------------------------
+
+TOPIC: KNOWLEDGE BASE
+
+DEFINITION:
+A Knowledge Base is a collection of information that can be searched and retrieved.
+
+EXAMPLE:
+A file containing Python concepts, syntax, and examples.
+
+----------------------------------------
+
+TOPIC: INFORMATION RETRIEVAL
+
+DEFINITION:
+Information Retrieval is the process of searching and finding relevant information from a knowledge source.
+
+EXAMPLE:
+Searching for "for loop" and displaying its definition and example.
+
+----------------------------------------
+
+TOPIC: FAQ ASSISTANT
+
+DEFINITION:
+A FAQ Assistant answers user questions by searching a knowledge base.
+
+EXAMPLE:
+
+Question:
+What is Python?
+
+Answer:
+Python is a high-level programming language.
+
+----------------------------------------
+
+TOPIC: RECOMMENDATION SYSTEM
+
+DEFINITION:
+A Recommendation System suggests relevant content based on user preferences or previous activities.
+
+EXAMPLE:
+
+Completed Course:
+Python Development
+
+Recommended Courses:
+Data Science
+Artificial Intelligence
+
+----------------------------------------
+
+TOPIC: TRAINING DATA
+
+DEFINITION:
+Training Data is the data used to teach an AI model patterns and relationships.
+
+EXAMPLE:
+I love Python
+I love AI
+I love Coding
+
+----------------------------------------
+
+TOPIC: PATTERN RECOGNITION
+
+DEFINITION:
+Pattern Recognition is the ability of a system to identify patterns in data.
+
+EXAMPLE:
+Detecting that the phrase "I love" is frequently followed by specific words.
+
+----------------------------------------
+
+TOPIC: NEXT WORD PREDICTION
+
+DEFINITION:
+Next Word Prediction is the process of predicting the most likely next word based on previous words.
+
+EXAMPLE:
+
+Training Data:
+I love Python
+I love AI
+I love Coding
+
+Input:
+I love
+
+Output:
+Python
+AI
+Coding
+
+----------------------------------------
+
+TOPIC: LANGUAGE MODEL
+
+DEFINITION:
+A Language Model predicts and generates text based on learned patterns from data.
+
+EXAMPLE:
+ChatGPT generating responses to user questions.
+
+----------------------------------------
+
+TOPIC: CHATBOT
+
+DEFINITION:
+A Chatbot is a software application that communicates with users using text or voice.
+
+EXAMPLE:
+Customer Support Bot.
+
+----------------------------------------
+
+TOPIC: COMPUTER VISION
+
+DEFINITION:
+Computer Vision enables computers to understand and interpret images and videos.
+
+EXAMPLE:
+Face Detection Systems.
+
+----------------------------------------
+
+TOPIC: AI ASSISTANT
+
+DEFINITION:
+An AI Assistant helps users perform tasks by understanding commands and providing intelligent responses.
+
+EXAMPLE:
+ChatGPT, Siri, Google Assistant.
+
+----------------------------------------
+
+TOPIC: RETRIEVAL AUGMENTED GENERATION (RAG)
+
+DEFINITION:
+RAG is a technique that combines information retrieval with text generation to provide more accurate answers.
+
+EXAMPLE:
+Searching a knowledge base first and then generating an answer using the retrieved information.
+
+========================================
+COURSE: CYBER SECURITY
+======================
+
+TOPIC: CYBER SECURITY
+
+DEFINITION:
+Cyber Security is the practice of protecting computers, networks, and data from cyber attacks, unauthorized access, and damage.
+
+EXAMPLE:
+Protecting online banking systems from hackers.
+
+----------------------------------------
+
+TOPIC: INFORMATION SECURITY
+
+DEFINITION:
+Information Security focuses on protecting data from unauthorized access, modification, or destruction.
+
+EXAMPLE:
+Encrypting customer information in a database.
+
+----------------------------------------
+
+TOPIC: CONFIDENTIALITY
+
+DEFINITION:
+Confidentiality ensures that information is accessible only to authorized users.
+
+EXAMPLE:
+Using passwords to protect student records.
+
+----------------------------------------
+
+TOPIC: INTEGRITY
+
+DEFINITION:
+Integrity ensures that data remains accurate and unchanged unless modified by authorized users.
+
+EXAMPLE:
+Preventing unauthorized modification of exam results.
+
+----------------------------------------
+
+TOPIC: AVAILABILITY
+
+DEFINITION:
+Availability ensures that systems and data are accessible when needed.
+
+EXAMPLE:
+Keeping a website online 24/7.
+
+----------------------------------------
+
+TOPIC: ENCRYPTION
+
+DEFINITION:
+Encryption converts readable data into coded text to prevent unauthorized access.
+
+EXAMPLE:
+
+Plain Text:
+password123
+
+Encrypted Text:
+x7A9kL2pQ
+
+----------------------------------------
+
+TOPIC: DECRYPTION
+
+DEFINITION:
+Decryption converts encrypted data back into its original readable form.
+
+EXAMPLE:
+Converting encrypted banking information back into readable data.
+
+----------------------------------------
+
+TOPIC: HASHING
+
+DEFINITION:
+Hashing converts data into a fixed-length value and cannot be reversed.
+
+EXAMPLE:
+Storing passwords securely in databases.
+
+INPUT:
+password123
+
+HASH:
+482c811da5d5b4bc6d497ffa98491e38
+
+----------------------------------------
+
+TOPIC: FIREWALL
+
+DEFINITION:
+A Firewall monitors and controls incoming and outgoing network traffic.
+
+EXAMPLE:
+Blocking unauthorized access to a company's network.
+
+----------------------------------------
+
+TOPIC: ANTIVIRUS
+
+DEFINITION:
+Antivirus software detects, prevents, and removes malicious software.
+
+EXAMPLE:
+Windows Defender.
+
+----------------------------------------
+
+TOPIC: MALWARE
+
+DEFINITION:
+Malware is malicious software designed to damage or gain unauthorized access to systems.
+
+EXAMPLE:
+Viruses, Worms, Trojans, and Ransomware.
+
+----------------------------------------
+
+TOPIC: VIRUS
+
+DEFINITION:
+A Virus is a malicious program that attaches itself to files and spreads when executed.
+
+EXAMPLE:
+A virus infecting executable files.
+
+----------------------------------------
+
+TOPIC: TROJAN HORSE
+
+DEFINITION:
+A Trojan disguises itself as legitimate software but performs malicious actions.
+
+EXAMPLE:
+A fake game containing malicious code.
+
+----------------------------------------
+
+TOPIC: RANSOMWARE
+
+DEFINITION:
+Ransomware encrypts files and demands payment to restore access.
+
+EXAMPLE:
+WannaCry Ransomware.
+
+----------------------------------------
+
+TOPIC: PHISHING
+
+DEFINITION:
+Phishing is a cyber attack that tricks users into revealing sensitive information.
+
+EXAMPLE:
+A fake email asking for banking credentials.
+
+----------------------------------------
+
+TOPIC: SOCIAL ENGINEERING
+
+DEFINITION:
+Social Engineering manipulates people into revealing confidential information.
+
+EXAMPLE:
+Pretending to be technical support to obtain passwords.
+
+----------------------------------------
+
+TOPIC: AUTHENTICATION
+
+DEFINITION:
+Authentication verifies the identity of a user.
+
+EXAMPLE:
+Logging in with a username and password.
+
+----------------------------------------
+
+TOPIC: AUTHORIZATION
+
+DEFINITION:
+Authorization determines what resources a user can access after authentication.
+
+EXAMPLE:
+Only administrators can delete student records.
+
+----------------------------------------
+
+TOPIC: MULTI-FACTOR AUTHENTICATION (MFA)
+
+DEFINITION:
+MFA requires multiple forms of verification before granting access.
+
+EXAMPLE:
+Password + OTP verification.
+
+----------------------------------------
+
+TOPIC: VPN (VIRTUAL PRIVATE NETWORK)
+
+DEFINITION:
+A VPN creates a secure encrypted connection over the internet.
+
+EXAMPLE:
+Accessing company resources securely from home.
+
+----------------------------------------
+
+TOPIC: CYBER ATTACK
+
+DEFINITION:
+A Cyber Attack is an attempt to gain unauthorized access to systems, networks, or data.
+
+EXAMPLE:
+A hacker trying to steal customer information.
+
+----------------------------------------
+
+TOPIC: PASSWORD SECURITY
+
+DEFINITION:
+Password Security involves creating strong passwords to protect accounts.
+
+EXAMPLE:
+
+Weak Password:
+123456
+
+Strong Password:
+P@ssw0rd#2026
+
+----------------------------------------
+
+TOPIC: DATA BREACH
+
+DEFINITION:
+A Data Breach occurs when sensitive information is accessed or exposed without authorization.
+
+EXAMPLE:
+Customer records leaked from a company database.
+
+----------------------------------------
+
+TOPIC: ETHICAL HACKING
+
+DEFINITION:
+Ethical Hacking involves testing systems for vulnerabilities with permission.
+
+EXAMPLE:
+A security expert testing a company's website for weaknesses.
+
+----------------------------------------
+
+TOPIC: PENETRATION TESTING
+
+DEFINITION:
+Penetration Testing is a controlled attack on a system to identify security vulnerabilities.
+
+EXAMPLE:
+Testing login security before deploying a web application.
+
+========================================
+COURSE: DATABASE MANAGEMENT
+===========================
+
+TOPIC: DATABASE
+
+DEFINITION:
+A Database is an organized collection of data that can be stored, managed, and retrieved efficiently.
+
+EXAMPLE:
+A Student Database containing Student ID, Name, Email, and Grade.
+
+----------------------------------------
+
+TOPIC: DBMS
+
+DEFINITION:
+DBMS (Database Management System) is software used to create, manage, and manipulate databases.
+
+EXAMPLES:
+MySQL
+Oracle
+PostgreSQL
+Microsoft SQL Server
+
+----------------------------------------
+
+TOPIC: RDBMS
+
+DEFINITION:
+RDBMS (Relational Database Management System) stores data in tables with rows and columns.
+
+EXAMPLES:
+MySQL
+PostgreSQL
+Oracle
+
+----------------------------------------
+
+TOPIC: TABLE
+
+DEFINITION:
+A Table is a collection of related data organized into rows and columns.
+
+EXAMPLE:
+
+STUDENTS
+
+| StudentID | Name  | Grade |
+| --------- | ----- | ----- |
+| 101       | Aarav | A     |
+| 102       | Diya  | B     |
+
+----------------------------------------
+
+TOPIC: ROW
+
+DEFINITION:
+A Row represents a single record in a table.
+
+EXAMPLE:
+
+| StudentID | Name  | Grade |
+| --------- | ----- | ----- |
+| 101       | Aarav | A     |
+
+This complete record is one row.
+----------------------------------------
+
+TOPIC: COLUMN
+
+DEFINITION:
+A Column represents a specific attribute of data.
+
+EXAMPLE:
+
+StudentID
+Name
+Grade
+
+are columns in the STUDENTS table.
+
+----------------------------------------
+TOPIC: SQL
+
+DEFINITION:
+SQL (Structured Query Language) is used to communicate with databases.
+
+EXAMPLE:
+Retrieving student records from a database.
+
+----------------------------------------
+
+TOPIC: SELECT
+
+DEFINITION:
+The SELECT statement is used to retrieve data from a table.
+
+SYNTAX:
+SELECT column_name
+FROM table_name;
+
+EXAMPLE:
+SELECT *
+FROM Students;
+
+OUTPUT:
+Displays all records from the Students table.
+
+----------------------------------------
+
+TOPIC: WHERE CLAUSE
+
+DEFINITION:
+The WHERE clause filters records based on a condition.
+
+SYNTAX:
+SELECT *
+FROM table_name
+WHERE condition;
+
+EXAMPLE:
+SELECT *
+FROM Students
+WHERE Grade = 'A';
+
+OUTPUT:
+Displays students whose grade is A.
+----------------------------------------
+
+TOPIC: INSERT
+
+DEFINITION:
+The INSERT statement adds new records to a table.
+
+SYNTAX:
+INSERT INTO table_name
+VALUES (...);
+
+EXAMPLE:
+INSERT INTO Students
+VALUES (101, 'Aarav', 'A');
+
+----------------------------------------
+
+TOPIC: UPDATE
+
+DEFINITION:
+The UPDATE statement modifies existing records.
+
+SYNTAX:
+UPDATE table_name
+SET column = value
+WHERE condition;
+
+EXAMPLE:
+UPDATE Students
+SET Grade = 'A+'
+WHERE StudentID = 101;
+
+----------------------------------------
+
+TOPIC: DELETE
+
+DEFINITION:
+The DELETE statement removes records from a table.
+
+SYNTAX:
+DELETE FROM table_name
+WHERE condition;
+
+EXAMPLE:
+DELETE FROM Students
+WHERE StudentID = 101;
+
+----------------------------------------
+
+TOPIC: PRIMARY KEY
+
+DEFINITION:
+A Primary Key uniquely identifies each record in a table.
+
+EXAMPLE:
+
+| StudentID | Name  |
+| --------- | ----- |
+| 101       | Aarav |
+| 102       | Diya  |
+
+StudentID is the Primary Key.
+
+----------------------------------------
+
+TOPIC: FOREIGN KEY
+
+DEFINITION:
+A Foreign Key creates a relationship between two tables.
+
+EXAMPLE:
+
+STUDENTS TABLE
+
+| StudentID | Name  |
+| --------- | ----- |
+| 101       | Aarav |
+
+ENROLLMENTS TABLE
+
+| EnrollmentID | StudentID |
+| ------------ | --------- |
+| E01          | 101       |
+
+StudentID acts as a Foreign Key.
+
+----------------------------------------
+
+TOPIC: NULL VALUE
+
+DEFINITION:
+A NULL value represents missing or unknown data.
+
+EXAMPLE:
+
+| StudentID | Phone Number |
+| --------- | ------------ |
+| 101       | NULL         |
+
+----------------------------------------
+
+TOPIC: UNIQUE CONSTRAINT
+
+DEFINITION:
+The UNIQUE constraint ensures that values in a column are not duplicated.
+
+EXAMPLE:
+Email addresses must be unique for every student.
+
+----------------------------------------
+
+TOPIC: JOINS
+
+DEFINITION:
+Joins combine data from multiple tables based on related columns.
+
+EXAMPLE:
+Combining Student and Enrollment tables.
+
+----------------------------------------
+
+TOPIC: INNER JOIN
+
+DEFINITION:
+INNER JOIN returns records that have matching values in both tables.
+
+SYNTAX:
+SELECT *
+FROM Table1
+INNER JOIN Table2
+ON Table1.ID = Table2.ID;
+
+EXAMPLE:
+Display enrolled students and their courses.
+
+----------------------------------------
+
+TOPIC: DATABASE NORMALIZATION
+
+DEFINITION:
+Normalization organizes data to reduce duplication and improve efficiency.
+
+EXAMPLE:
+Separating Students, Courses, and Enrollments into different tables.
+
+----------------------------------------
+
+TOPIC: INDEX
+
+DEFINITION:
+An Index improves the speed of data retrieval operations.
+
+EXAMPLE:
+Searching StudentID quickly in a large database.
+
+----------------------------------------
+
+TOPIC: DATABASE BACKUP
+
+DEFINITION:
+A Database Backup is a copy of database data used for recovery.
+
+EXAMPLE:
+Creating a backup before updating student records.
+
+----------------------------------------
+
+TOPIC: TRANSACTION
+
+DEFINITION:
+A Transaction is a sequence of database operations executed as a single unit.
+
+EXAMPLE:
+Transferring money from one bank account to another.
+
+----------------------------------------
+
+TOPIC: COMMIT
+
+DEFINITION:
+COMMIT permanently saves database changes.
+
+SYNTAX:
+COMMIT;
+
+EXAMPLE:
+After successfully inserting records.
+
+----------------------------------------
+
+TOPIC: ROLLBACK
+
+DEFINITION:
+ROLLBACK undoes database changes if an error occurs.
+
+SYNTAX:
+ROLLBACK;
+
+EXAMPLE:
+Canceling a transaction after a failure.
+
+----------------------------------------
+
+TOPIC: DATABASE SECURITY
+
+DEFINITION:
+Database Security protects data from unauthorized access and threats.
+
+EXAMPLE:
+Restricting access to student records using user roles and passwords.

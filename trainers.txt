@@ -1,0 +1,6 @@
+TRN501,Amit Sharma,amit.sharma.slms@gmail.com,Python Development
+TRN502,Priya Verma,v,Data Science
+TRN503,Rahul Mehta,rahul.mehta.slms@gmail.com,Web Development
+TRN504,Neha Patil,neha.patil.slms@gmail.com,Artificial Intelligence
+TRN505,Karan Joshi,karan.joshi.slms@gmail.com,Cyber Security
+TRN506,Aditya Desai,aditya.desai.slms@gmail.com,Database Management
