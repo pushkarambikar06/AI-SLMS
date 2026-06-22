@@ -118,6 +118,52 @@ class Tokenizer:
                     frequency[word] = 1
 
         return frequency
+
+
+class Learning_Assistant:
+    def __init__(self,system):
+        self.system = system
+
+    def answer_question(self, question):
+
+        ignore_words = [
+            "what",
+            "is",
+            "explain",
+            "tell",
+            "me",
+            "about",
+            "the"
+        ]
+
+        words = question.lower().split()
+
+        for word in words:
+
+            if word not in ignore_words:
+                self.system.search_knowledge_base(word)
+
+    def recommend_topic(self, completed_topic):
+
+                    recommendations = {
+                        "functions": ["CLASS", "OBJECT"],
+                        "class": ["OBJECT", "CONSTRUCTOR"],
+                        "inheritance": ["POLYMORPHISM", "ABSTRACTION"],
+                        "variables": ["DATA TYPES", "INPUT FUNCTION"]
+                    }
+
+                    completed_topic = completed_topic.lower()
+
+                    if completed_topic in recommendations:
+
+                        print("\nRecommended Topics:")
+
+                        for topic in recommendations[completed_topic]:
+                            print("-", topic)
+
+                    else:
+                        print("No Recommendation Available")
+
 class SLMSSystem:
 
     def __init__(self):
@@ -447,10 +493,12 @@ class SLMSSystem:
 
 def main():
     system = SLMSSystem()
+    assistant = Learning_Assistant(system)
     system.load_students()
     system.load_trainers()
     system.load_courses()
     system.load_enrollment()
+
     print("\nData Loaded Successfully")
 
     while True:
@@ -468,7 +516,7 @@ def main():
         print("11. Delete Student")
         print("12. Delete Trainer")
         print("13. Delete Course")
-        print("14. Slms Ai")
+        print("14. Learning Assistant")
         print("15. Tokenization Engine")
         print("16. Exit")
 
@@ -654,9 +702,17 @@ def main():
             system.delete_course(course_id)
 
         elif choice == "14":
-            keyword = input("How Can I Help You: ")
-            system.search_knowledge_base(keyword)
-
+            print("1. Ask Questions")
+            print("2. Get Recommendations")
+            ask = input("Enter Your Choice: ")
+            if ask =="1":
+                question = input("Enter Your Question: ")
+                assistant.answer_question(question)
+            if ask =="2":
+                recommendation = input("Enter Your Recommendation: ")
+                assistant.recommend_topic(recommendation)
+            else:
+                print("Invalid Choice")
         elif choice == "15":
 
 
