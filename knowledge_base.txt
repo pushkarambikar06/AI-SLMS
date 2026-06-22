@@ -5,6 +5,35 @@ AI-SLMS KNOWLEDGE BASE
 COURSE: PYTHON DEVELOPMENT
 ==========================
 
+TOPIC: PYTHON
+
+DEFINITION:
+Python is a high-level, general-purpose, and incredibly popular programming language. 
+It was created by Guido van Rossum and first released in 1991.
+Think of Python as the "English" of the programming world—it was designed 
+to be easy to read, write, and understand.
+
+----------------------------------------
+TOPIC: PYTHON FEATURES
+
+DEFINITION:
+1] Readability: 
+Python uses clean syntax that closely resembles English. It relies heavily on whitespace (indentation) 
+instead of complex symbols like curly braces {} or semicolons ;, making the code highly readable.
+
+2] Versatility: 
+It is a general-purpose language, meaning it can be used to build almost anything.
+It isn't restricted to just one type of software development.
+
+3] Interpreted Language: 
+Python code is executed line-by-line, 
+which makes testing and debugging much faster and beginner-friendly.
+
+4] Massive Ecosystem: 
+It has a massive community and a vast library of pre-written code (packages) 
+that you can plug into your projects, saving you from reinventing the wheel. 
+
+----------------------------------------
 TOPIC: VARIABLES
 
 DEFINITION:

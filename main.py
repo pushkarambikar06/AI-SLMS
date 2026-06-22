@@ -138,32 +138,71 @@ class Learning_Assistant:
 
         words = question.lower().split()
 
+        filtered_words = []
+
         for word in words:
 
             if word not in ignore_words:
-                self.system.search_knowledge_base(word)
+                filtered_words.append(word)
+
+        keyword = " ".join(filtered_words)
+        print(keyword)
+        self.system.search_knowledge_base(keyword)
 
     def recommend_topic(self, completed_topic):
 
                     recommendations = {
+
+                        # Python
+                        "variables": ["DATA TYPES", "INPUT FUNCTION"],
                         "functions": ["CLASS", "OBJECT"],
-                        "class": ["OBJECT", "CONSTRUCTOR"],
-                        "inheritance": ["POLYMORPHISM", "ABSTRACTION"],
-                        "variables": ["DATA TYPES", "INPUT FUNCTION"]
+
+                        # Data Science
+                        "numpy": ["PANDAS", "DATAFRAME"],
+                        "pandas": ["DATA CLEANING", "DATA ANALYSIS"],
+
+                        # Web Development
+                        "html": ["CSS", "JAVASCRIPT"],
+                        "css": ["RESPONSIVE WEB DESIGN"],
+
+                        # AI
+                        "machine learning": ["DEEP LEARNING", "NEURAL NETWORK"],
+                        "tokenization": ["WORD FREQUENCY", "INFORMATION RETRIEVAL"],
+
+                        # Cyber Security
+                        "encryption": ["DECRYPTION", "HASHING"],
+                        "authentication": ["AUTHORIZATION", "MFA"],
+
+                        # DBMS
+                        "database": ["DBMS", "RDBMS"],
+                        "sql": ["SELECT", "WHERE CLAUSE"]
                     }
 
                     completed_topic = completed_topic.lower()
-
                     if completed_topic in recommendations:
-
-                        print("\nRecommended Topics:")
-
+                        print("\nRecommented Topic:")
                         for topic in recommendations[completed_topic]:
                             print("-", topic)
+                    else:
+                        print("Topic Recommendation is not Available")
 
+    def Course_recommendation(self,completed_course):
+                    recommendations = {
+                        "python development": ["Data Science", "Artificial Intelligence"],
+                        "data science": ["Artificial Intelligence"],
+                        "web development": ["Database Management"],
+                        "database management": ["Cyber Security"],
+                        "artificial intelligence": ["Data Science"],
+                        "cyber security": ["Database Management"]
+                    }
+
+                    completed_course = completed_course.lower()
+                    if completed_course in recommendations:
+                        print("\nRecommended Courses:")
+                        for topic in recommendations[completed_course]:
+                            print("-", topic)
                     else:
                         print("No Recommendation Available")
-
 class SLMSSystem:
 
     def __init__(self):
@@ -476,7 +515,7 @@ class SLMSSystem:
                     continue
 
                 topic_name = lines[0].strip()
-
+                #old Version
                 if keyword.lower() == topic_name.lower():
                     print("\nTOPIC:")
                     print(topic)
@@ -703,14 +742,20 @@ def main():
 
         elif choice == "14":
             print("1. Ask Questions")
-            print("2. Get Recommendations")
+            print("2. Get Topic Recommendations")
+            print("3. Get Course Recommendations")
             ask = input("Enter Your Choice: ")
             if ask =="1":
                 question = input("Enter Your Question: ")
                 assistant.answer_question(question)
-            if ask =="2":
-                recommendation = input("Enter Your Recommendation: ")
+
+            elif ask =="2":
+                recommendation = input("Enter Which Topic You Had Completed: ")
                 assistant.recommend_topic(recommendation)
+
+            elif ask =="3":
+                recommendation2 = input("Enter Which Course you Had Completed:")
+                assistant.Course_recommendation(recommendation2)
             else:
                 print("Invalid Choice")
         elif choice == "15":
